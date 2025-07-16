@@ -1,36 +1,56 @@
-# Whatsap AI ChatBot (OpenAı + Selenium) (Turkish)
-## 📚Özellikler:
--WhatsApp Web'deki sohbetlerdeki mesajları okur
--OpenAI API ile doğal ve sohbet tarzında cevaplar üretir
--Cevabı otomatik olarak WhatsApp Web içindeki giriş alanına yazar ve mesajı gönderir
+# WhatsApp AI ChatBot - Gelişmiş Çoklu AI Desteği
 
-## 🛠️ Kurulum:
- -Python 3.10 veya 3.11 sürümleri kurlu olmalı
-  Gerekli Kütüphaneler: Selenium, OpenAI isteğe ve kullanıma göre pywhatkit:
-  ```bash
-  pip install openai
-  pip install selenium
-  pip install pywhatkit 
+## 🚀 Yeni Özellikler:
+- **Çoklu AI Desteği**: OpenAI, Claude (Anthropic), DeepSeek
+- **Grafik Kullanıcı Arayüzü**: Kolay kullanım için modern GUI
+- **EXE Dosya Desteği**: Kurulum gerektirmeden çalışır
+- **API Anahtar Yönetimi**: Güvenli anahtar saklama
+- **Dinamik AI Seçimi**: Farklı AI'lar arasında anında geçiş
+
+## 📚 Özellikler:
+- WhatsApp Web'deki sohbetlerdeki mesajları okur
+- **OpenAI, Claude ve DeepSeek** API'leri ile doğal cevaplar üretir
+- Cevabı otomatik olarak WhatsApp Web'e yazar ve gönderir
+- Kullanıcı dostu kontrol paneli
+- API anahtarlarını güvenli şekilde saklar
+- Gerçek zamanlı durum bildirimleri
+
+## 🛠️ Hızlı Kurulum:
+1. `setup.bat` dosyasını çalıştırın (Windows)
+2. `build.bat` dosyasını çalıştırarak EXE dosyalarını oluşturun
+3. `AI_Manager.exe` dosyasını çalıştırın
+
+### Manuel Kurulum:
+```bash
+pip install -r requirements.txt
+python ai_manager.py
 ```
 
-## ❗Dikkat:
-- `ai_cevap.py` içinde kendi OpenAI API anahtarını gir:
-```python
-openai.api_key = "API_ANAHTARIN"
-```
-   
--Yapay zeka modelinizin ayarlarını aşağıdaki alanda değiştirebilirsiniz(`ai_cevap.py`), içinde.
-```python
-response = openai.chat.completions.create( #For creating a ChatBot, older versions may use ".ChatCompletions"
-        model="gpt-3.5-turbo",#Chatnot Modeli
-        messages=[
-            {"role": "system", "content": "Sen bir arkadaş gibi konuşan chatbot'sun."}, #ChatBot  Rol Alanı
-            {"role": "user", "content": mesaj}
-        ]
-    )
-```
+## 🔑 API Anahtarları:
+### OpenAI:
+1. https://platform.openai.com/ adresine gidin
+2. API anahtarınızı oluşturun
+3. GUI'den "OpenAI API Key" alanına girin
+
+### Claude (Anthropic):
+1. https://console.anthropic.com/ adresine gidin
+2. API anahtarınızı oluşturun
+3. GUI'den "Claude API Key" alanına girin
+
+### DeepSeek:
+1. https://platform.deepseek.com/ adresine gidin
+2. API anahtarınızı oluşturun
+3. GUI'den "DeepSeek API Key" alanına girin
+
+## 📱 Kullanım:
+1. AI Manager'ı çalıştırın
+2. İstediğiniz AI'ı seçin
+3. API anahtarlarınızı girin ve kaydedin
+4. Sorunuzu yazın ve "Gönder" butonuna tıklayın
+
 ## 🌐 Dil Desteği:
-    -Türkçe ve İngilizce
+- Türkçe ve İngilizce
+- Çoklu dil desteği AI ayarlarından yapılandırılabilir
 
 
 # WhatsApp AI ChatBot (OpenAI + Selenium)(English)

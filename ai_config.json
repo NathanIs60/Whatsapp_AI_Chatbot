@@ -1,0 +1,11 @@
+{
+  "openai_api_key": "",
+  "claude_api_key": "",
+  "deepseek_api_key": "",
+  "last_selected_ai": "OpenAI",
+  "settings": {
+    "temperature": 0.7,
+    "max_tokens": 1000,
+    "system_message": "Sen yardımcı bir AI asistanısın. Türkçe sorulara Türkçe cevap ver."
+  }
+}

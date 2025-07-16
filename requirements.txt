@@ -1,0 +1,25 @@
+# AI API Kütüphaneleri
+openai>=1.0.0
+anthropic>=0.8.0
+requests>=2.25.0
+
+# GUI Kütüphaneleri
+# tkinter Python ile birlikte gelir, ayrıca yüklenmez
+
+# WhatsApp Bot için gerekli kütüphaneler
+selenium>=4.0.0
+pywhatkit>=5.3
+
+# Genel kütüphaneler
+json5>=0.9.0
+datetime
+threading
+os
+time
+
+# EXE oluşturma için
+pyinstaller>=5.0.0
+
+# Ek kütüphaneler
+webdriver-manager>=3.8.0
+
