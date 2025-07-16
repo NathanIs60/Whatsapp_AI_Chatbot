@@ -58,7 +58,7 @@ pip install pywhatkit
   ```
   -You can change your AI model settings in the following section inside(`ai_cevap.py`):
   ```python
-  response = openai.chat.completions.create( #ChatBot oluşturma eski sürümlerde ".ChatCompletions" kullanılabilinir
+  response = openai.chat.completions.create( # For creating the ChatBot; in older versions, ".ChatCompletions" may be used
           model="gpt-3.5-turbo",#Chatnot Modeli
           messages=[
               {"role": "system", "content": "Sen bir arkadaş gibi konuşan chatbot'sun."}, #ChatBot Role Section
