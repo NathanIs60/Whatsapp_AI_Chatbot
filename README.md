@@ -1,7 +1,4 @@
 # Whatsap AI ChatBot (OpenAı + Selenium) (Turkish)
-
-Bu proje, WhatsApp Web'e gelen mesajlara GPT-3.5-turbo veya kullandığınız herhangi bir OpenAI modelini kullanarak otomatik cevap veren bir yapay zeka botudur.
-
 ## 📚Özellikler:
 -WhatsApp Web'deki sohbetlerdeki mesajları okur
 -OpenAI API ile doğal ve sohbet tarzında cevaplar üretir
