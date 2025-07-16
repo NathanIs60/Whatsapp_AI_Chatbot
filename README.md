@@ -21,7 +21,7 @@ openai.api_key = "API_ANAHTARIN"
    
 -Yapay zeka modelinizin ayarlarını aşağıdaki alanda değiştirebilirsiniz(`ai_cevap.py`), içinde.
 ```python
-response = openai.chat.completions.create( #ChatBot oluşturma eski sürümlerde ".ChatCompletions" kullanılabilinir
+response = openai.chat.completions.create( #For creating a ChatBot, older versions may use ".ChatCompletions"
         model="gpt-3.5-turbo",#Chatnot Modeli
         messages=[
             {"role": "system", "content": "Sen bir arkadaş gibi konuşan chatbot'sun."}, #ChatBot  Rol Alanı
@@ -52,19 +52,19 @@ pip install pywhatkit
 ```
 
 ## ❗Dikkat:
-    - `ai_cevap.py` Insert your own OpenAI API key inside:
-    ```python
-    openai.api_key = "API_ANAHTARIN"
-    ```
-    -You can change your AI model settings in the following section inside(`ai_cevap.py`):
-    ```python
-    response = openai.chat.completions.create( #ChatBot oluşturma eski sürümlerde ".ChatCompletions" kullanılabilinir
-            model="gpt-3.5-turbo",#Chatnot Modeli
-            messages=[
-                {"role": "system", "content": "Sen bir arkadaş gibi konuşan chatbot'sun."}, #ChatBot  Rol Alanı
-                {"role": "user", "content": mesaj}
-            ]
-        )
-    ```
+  - `ai_cevap.py` Insert your own OpenAI API key inside:
+  ```python
+  openai.api_key = "API_ANAHTARIN"
+  ```
+  -You can change your AI model settings in the following section inside(`ai_cevap.py`):
+  ```python
+  response = openai.chat.completions.create( #ChatBot oluşturma eski sürümlerde ".ChatCompletions" kullanılabilinir
+          model="gpt-3.5-turbo",#Chatnot Modeli
+          messages=[
+              {"role": "system", "content": "Sen bir arkadaş gibi konuşan chatbot'sun."}, #ChatBot Role Section
+              {"role": "user", "content": mesaj}
+          ]
+      )
+  ```
 ## 🌐 Language Support:
     -Turkish and English
