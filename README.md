@@ -54,7 +54,7 @@ pip install pywhatkit
 ## ❗Dikkat:
   - `ai_cevap.py` Insert your own OpenAI API key inside:
   ```python
-  openai.api_key = "API_ANAHTARIN"
+  openai.api_key = "API_KEY"
   ```
   -You can change your AI model settings in the following section inside(`ai_cevap.py`):
   ```python
